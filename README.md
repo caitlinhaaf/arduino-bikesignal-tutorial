@@ -17,7 +17,7 @@ __Supply list:__
 
 3. __Link your LED library to the Project__ In the Arduino sketch, you will need to include the LED library (#include "LedControlMS.h"). The library also includes some functions to set intensity and display (see matrix declarations and function inside void setup()). If you use the settings we've included in the sketch, you should start with the LED matrices turned off, with medium brightness when turned on.
 
-4. __Set the inputs/outputs in your Arduino sketch__ Note that we collected the button pin/led pin numbers into arrays. We have also set current, previous, and btn states (all to 0, or off) in arrays, and have collected the number of button inputs in a variable (int BTN_NUM). You can refer to included Fritzing diagram for the setup we used. The pins numbers we used were:
+4. __Set the inputs/outputs in your Arduino sketch__ Note that we collected the button pin/led pin numbers into arrays. We have also set current (nowState[]), previous (oldState[]), and btn (btnStates[]) states (all to 0, or off) in arrays, and have collected the number of button inputs in a variable (int BTN_NUM). You can refer to included Fritzing diagram for the setup we used. The pins numbers we used were:
  * Push button 1 - pin 2
  * Push button 2 - pin 3 
  * LED Matrix DataIn - pin 12
@@ -28,11 +28,11 @@ __Supply list:__
 
 5. __Assign pinModes in the void setup()__ Since we collected the BTN and LED pin numbers in an array, we used a for loop to assign them as inputs/outputs. Assign each of the 3 LED matrix pins as outputs. 
 
-6. __Set Up your void loop() function__
+6. __Set Up your void loop() function__ Our void loop() function maps the nowStates[] values to the readings received from the button inputs (nowStates[i] = digitalRead(btns[i]);). Meaning if you depress the btn at position 0 in the button array, the nowState at position 0 will be set to 1. Next, the function checks if the nowState[] as associated oldState[] are the same value (if(nowStates[i] != oldStates[i])), and if the nowState[] is 1 (if(nowStates[i] == 1))  - if both of these conditionals are true, this means the button has been pressed. The function then checks the associated button state in the btnState[] array, and if it's set to "OFF" (0), the btnState is then set to "ON" (if(btnStates[i] == 0{btnStates[i] = 1;}). Else, if the btnStates[] was equal to 1 (button was previously pressed), it will set the btnStates[i] to 0, or "OFF" (else{digitalWrite(btnStates[i] = 0;}). Lastly, the function sets the oldStates[i] to nowStates[i].
 
 7. __Set up a void blink() function to set state__
 
-8. __Set up void rightBlink() and void leftBlink() functions_
+8. __Set up void rightBlink() and void leftBlink() functions__
 
 9. __Add conditional to void loop() to check right/left state and run right/left functions__ 
 
