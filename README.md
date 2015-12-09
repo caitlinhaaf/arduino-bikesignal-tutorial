@@ -1,6 +1,6 @@
 # arduino-bikesignal-tutorial
 ####IMM Sheridan Technology Studio Project - Chanelle F., Caitlin H., Lucey K.
-[img](https://github.com/caitlinhaaf/arduino-bikesignal-tutorial/blob/master/Media/IMG_20151203_161531171.jpg)
+![bike signal with blink](https://github.com/caitlinhaaf/arduino-bikesignal-tutorial/blob/master/Media/IMG_20151203_161531171.jpg)
 
 ######Supply list:
 * 1 [Arduino Uno](https://www.arduino.cc/en/Main/ArduinoBoardUno)
