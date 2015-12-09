@@ -15,7 +15,7 @@ __Supply list:__
 
 2. __Install the LED Matrix Library__ The library we used to work with the LED matrices (LedControlMS) was made by [Makespace Madrid](http://makespacemadrid.org/). We pulled the library from this [Instructables page] (http://www.instructables.com/id/LED-Matrix-with-Arduino/). We've also included the library here. You will have to place the library folder into the Program Files > Arduino > Libraries.
 
-3.__Link your LED library to the Project__ In the Arduino sketch, you will need to include the LED library (#include "LedControlMS.h"). The library also includes some functions to set intensity and display (see matrix declarations and function inside void setup()). If you use the settings we've included in the sketch, you should start with the LED matrices turned off, with medium brightness when turned on.
+3. __Link your LED library to the Project__ In the Arduino sketch, you will need to include the LED library (#include "LedControlMS.h"). The library also includes some functions to set intensity and display (see matrix declarations and function inside void setup()). If you use the settings we've included in the sketch, you should start with the LED matrices turned off, with medium brightness when turned on.
 
 4. __Set the inputs/outputs in your Arduino sketch__ Note that we collected the button pin/led pin numbers into arrays. We have also set current, previous, and btn states (all to 0, or off) in arrays, and have collected the number of button inputs in a variable (int BTN_NUM). You can refer to included Fritzing diagram for the setup we used. The pins numbers we used were:
  * Push button 1 - pin 2
