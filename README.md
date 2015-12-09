@@ -26,6 +26,15 @@ __Supply list:__
  * Single LED 1 (used for testing functionality) - pin 6
  * Single LED 2 (used for testing functionality) - pin 7
 
-5. __Assign pinModes__  
+5. __Assign pinModes in the void setup()__ Since we collected the BTN and LED pin numbers in an array, we used a for loop to assign them as inputs/outputs. Assign each of the 3 LED matrix pins as outputs. 
+
+6. __Set Up your void loop() function__
+
+7. __Set up a void blink() function to set state__
+
+8. __Set up void rightBlink() and void leftBlink() functions_
+
+9. __Add conditional to void loop() to check right/left state and run right/left functions__ 
+
 
 
