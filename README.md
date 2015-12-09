@@ -1,8 +1,8 @@
 # arduino-bikesignal-tutorial
-###IMM Sheridan Technology Studio Project - Chanelle F., Caitlin H., Lucey K.
+####IMM Sheridan Technology Studio Project - Chanelle F., Caitlin H., Lucey K.
 [](https://github.com/caitlinhaaf/arduino-bikesignal-tutorial/blob/master/Media/IMG_20151203_161531171.jpg)
 
-###Supply list:
+######Supply list:
 * 1 [Arduino Uno](https://www.arduino.cc/en/Main/ArduinoBoardUno)
 * 1 type B USB cable
 * 2 breadboards
