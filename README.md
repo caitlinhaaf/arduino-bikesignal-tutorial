@@ -32,9 +32,11 @@ __Supply list:__
 
 7. __Set up a void blink() function to set state__ Next we wrote a function that would collect the position of the btn in the array (blink(i)) and based on this number, it would set a right or left state. To test this, we first serial printed a message when each button was pressed to be sure that the code could differentiate between the two (_if(x==0){Serial.println("BTN R PRESSED");}else{Serial.println("BTN L PRESSED")}_).
 
-8. __Set up void rightBlink() and void leftBlink() functions__ We used the LED Matrix library to map out our arrow shapes on the matrices. The lc.setLED() function collects 4 parameters: matrix number, column number, row number, and true/false (on/off). We set our right arrow LEDS to blink on/off in the rightBlink() function, and the left arrow LEDS to blink on/off in the leftBlink() function.
+8. __Set up void rightBlink() and void leftBlink() functions__ We used the LED Matrix library to map out our arrow shapes on the matrices. The lc.setLED() function collects 4 parameters: matrix number, column number, row number, and true/false (on/off). We set our right arrow LEDS to blink on/off in the rightBlink() function, and the left arrow LEDS to blink on/off in the leftBlink() function. 
 
-9. __Add conditional to void loop() to check right/left state and run right/left functions__ 
+9. __Have blink() function set right/left values__ Now that we've defined the functions we want to run when we signal right/left, we want to run those functions on a button press. At the top of our sketch, we've defined variables of right and left, and assigned both to 0. We assing the right/left buttons in the blink() function - when one of the buttons is pressed right = 1 and left = 0, and vice versa for the other button. We also wanted to have the blinks cancel when the button is pressed a second time (i.e. pressing the left button once will turn on the blink, and twice will turn off the blink), so in the void loop() where we check/assign btn states, if the button was previously set to ON, once pressed again the button will set to OFF, and right and left will be set to 0.
+
+10. __Add conditional to void loop() to check right/left state and run right/left functions__ Since we want to continuously check the state of right/left, and run the associated blink functions continuously when turned ON, we check the right/left states in a conditional at the end of our void loop() function, and run the rightBlink() and leftBlink() functions based on these values.
 
 
 
