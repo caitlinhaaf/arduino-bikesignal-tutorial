@@ -1,6 +1,6 @@
 # arduino-bikesignal-tutorial
 ####IMM Sheridan Technology Studio Project - Chanelle F., Caitlin H., Lucey K.
-[](https://github.com/caitlinhaaf/arduino-bikesignal-tutorial/blob/master/Media/IMG_20151203_161531171.jpg)
+[img](https://github.com/caitlinhaaf/arduino-bikesignal-tutorial/blob/master/Media/IMG_20151203_161531171.jpg)
 
 ######Supply list:
 * 1 [Arduino Uno](https://www.arduino.cc/en/Main/ArduinoBoardUno)
@@ -23,4 +23,5 @@
  * Single LED 1 (used for testing functionality) - pin 6
  * Single LED 2 (used for testing functionality) - pin 7
 
+4. In the Arduino sketch, you will need to include the LED library (#include "LedControlMS.h")  
 
