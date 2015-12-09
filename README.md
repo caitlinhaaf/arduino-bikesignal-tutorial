@@ -10,10 +10,20 @@
 * 2 pushbuttons
 * ~20 wires (we also used some female wire to extend
 
-1.Ensure that the [Arduino software](https://www.arduino.cc/en/Main/Software) is installed.
+1. Ensure that the [Arduino software](https://www.arduino.cc/en/Main/Software) is installed.
 
-2.Install the LED Matrix Library, The library we used to work with the LED matrices (LedControlMS) was made by [Makespace Madrid](http://makespacemadrid.org/). We pulled the library from this [Instructables page] (http://www.instructables.com/id/LED-Matrix-with-Arduino/). We've also included the library here. You will have to place the library folder into the Program Files > Arduino > Libraries.
+2. Install the LED Matrix Library, The library we used to work with the LED matrices (LedControlMS) was made by [Makespace Madrid](http://makespacemadrid.org/). We pulled the library from this [Instructables page] (http://www.instructables.com/id/LED-Matrix-with-Arduino/). We've also included the library here. You will have to place the library folder into the Program Files > Arduino > Libraries.
 
-3.Refer to included Fritzing diagram for wiring instructions. 
+3. Refer to included Fritzing diagram for wiring instructions. The pins we used were:
+* Buttons:
+  * Button 1 - pin 2
+  * Button 2 - pin 3 
+* LED Matrices:
+  * DataIn - pin 12
+  * CLK - pin 11
+  * LOAD - pin 10
+*Single LEDS (for testing funcitonality):
+ * LED 1 - pin 6
+ * LED 2 - pin 7
 
 
