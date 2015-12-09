@@ -8,7 +8,7 @@
 * 2 breadboards
 * 2 8x8 LED Matrices with attached driver chip - we used [these](https://www.creatroninc.com/product/8x8-led-matrix-board/)
 * 2 pushbuttons
-* ~20 wires (we also used some female wire to extend
+* aprox. 20 wires (we also used some female wire to extend
 
 1. Ensure that the [Arduino software](https://www.arduino.cc/en/Main/Software) is installed.
 
