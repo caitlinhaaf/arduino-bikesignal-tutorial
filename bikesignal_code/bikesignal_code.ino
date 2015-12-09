@@ -4,8 +4,10 @@
 //BTN DECLARATIONS
 int BTN_NUM = 2;
 int btns[] = {2,3};
+
 //LED DECLARATIONS (FOR TESTING)
 int leds[] = {6,7};
+
 //BTN STATE DECLARATIONS
 int nowStates[] = {0,0};
 int oldStates[] = {0,0};
@@ -43,31 +45,31 @@ void setup(){
     pinMode(leds[i],OUTPUT);
   }
 
-  //  LED MATRICES OUTPUTS DECLARATIONS
-      pinMode(DataIn, OUTPUT);
-      pinMode(CLK, OUTPUT);
-      pinMode(LOAD, OUTPUT);
+//  LED MATRICES OUTPUTS DECLARATIONS
+    pinMode(DataIn, OUTPUT);
+    pinMode(CLK, OUTPUT);
+    pinMode(LOAD, OUTPUT);
 }
 
 
-
+//LOOP
 void loop(){ 
   for(int i = 0; i < BTN_NUM; i++){
-    nowStates[i] = digitalRead(btns[i]);
-    if(nowStates[i] != oldStates[i]){
-      if(nowStates[i] == 1){
-        if(btnStates[i] == 0){
-          digitalWrite(leds[i], HIGH);
-          btnStates[i] = 1;
-          blink(i);
-        }else{
-          digitalWrite(leds[i], LOW);
-          btnStates[i] = 0;
-          right = 0;
-          left = 0;
+    nowStates[i] = digitalRead(btns[i]);    //setting current state to btn input
+    if(nowStates[i] != oldStates[i]){       //comparing current state to previous state
+      if(nowStates[i] == 1){                //if the current state is now ON...
+        if(btnStates[i] == 0){              //and btn state is OFF
+          digitalWrite(leds[i], HIGH);      //turn ON associated LED
+          btnStates[i] = 1;                 //set the btn state to ON
+          blink(i);                         //run blink() and pass in array position
+        }else{                              //otherwise (if btn state is ON)
+          digitalWrite(leds[i], LOW);       //turn OFF associated LED 
+          btnStates[i] = 0;                 //set the btn state to OFF
+          right = 0;                        //set right to 0 (rightBlink OFF)
+          left = 0;                         //set left to 0 (leftBlink OFF)
         }
       }
-      oldStates[i] = nowStates[i];
+      oldStates[i] = nowStates[i];          //set the associated oldState to the nowState
     }
   }
   delay(50);
