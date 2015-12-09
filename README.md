@@ -3,12 +3,12 @@
 [](https://github.com/caitlinhaaf/arduino-bikesignal-tutorial/blob/master/Media/IMG_20151203_161531171.jpg)
 
 ###Supply list:
-*1 [Arduino Uno](https://www.arduino.cc/en/Main/ArduinoBoardUno)
-*1 type B USB cable
-*2 breadboards
-*2 8x8 LED Matrices with attached driver chip - we used [these](https://www.creatroninc.com/product/8x8-led-matrix-board/)
-*2 pushbuttons
-*~20 wires (we also used some female wire to extend
+* 1 [Arduino Uno](https://www.arduino.cc/en/Main/ArduinoBoardUno)
+* 1 type B USB cable
+* 2 breadboards
+* 2 8x8 LED Matrices with attached driver chip - we used [these](https://www.creatroninc.com/product/8x8-led-matrix-board/)
+* 2 pushbuttons
+* ~20 wires (we also used some female wire to extend
 
 1.Ensure that the [Arduino software](https://www.arduino.cc/en/Main/Software) is installed.
 
