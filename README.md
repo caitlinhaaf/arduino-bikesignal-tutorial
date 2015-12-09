@@ -32,7 +32,7 @@ __Supply list:__
 
 7. __Set up a void blink() function to set state__ Next we wrote a function that would collect the position of the btn in the array (blink(i)) and based on this number, it would set a right or left state. To test this, we first serial printed a message when each button was pressed to be sure that the code could differentiate between the two (_if(x==0){Serial.println("BTN R PRESSED");}else{Serial.println("BTN L PRESSED")}_).
 
-8. __Set up void rightBlink() and void leftBlink() functions__
+8. __Set up void rightBlink() and void leftBlink() functions__ We used the LED Matrix library to map out our arrow shapes on the matrices. The lc.setLED() function collects 4 parameters: matrix number, column number, row number, and true/false (on/off). We set our right arrow LEDS to blink on/off in the rightBlink() function, and the left arrow LEDS to blink on/off in the leftBlink() function.
 
 9. __Add conditional to void loop() to check right/left state and run right/left functions__ 
 
