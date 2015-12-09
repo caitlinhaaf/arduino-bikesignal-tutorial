@@ -12,11 +12,8 @@
 
 1.Ensure that the [Arduino software](https://www.arduino.cc/en/Main/Software) is installed.
 
-2.Install the LED Matrix Library
-The library we used to work with the LED matrices (LedControlMS) was made by [Makespace Madrid](http://makespacemadrid.org/).
-We pulled the library from this [Instructables page] (http://www.instructables.com/id/LED-Matrix-with-Arduino/).
-We've also included the library here. You will have to place the library folder into the Program Files > Arduino > Libraries.
+2.Install the LED Matrix Library, The library we used to work with the LED matrices (LedControlMS) was made by [Makespace Madrid](http://makespacemadrid.org/). We pulled the library from this [Instructables page] (http://www.instructables.com/id/LED-Matrix-with-Arduino/). We've also included the library here. You will have to place the library folder into the Program Files > Arduino > Libraries.
 
-3. Refer to included Fritzing diagram for wiring instructions. 
+3.Refer to included Fritzing diagram for wiring instructions. 
 
 
