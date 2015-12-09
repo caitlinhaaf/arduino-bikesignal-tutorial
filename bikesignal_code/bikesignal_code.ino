@@ -24,6 +24,7 @@ LedControl lc=LedControl(12,11,10, NBR_MTX);
 
 
 void setup(){
+// BEGIN SERIAL PRINTING
    Serial.begin (9600);
    Serial.println("Setup");
 
@@ -50,9 +51,7 @@ void setup(){
 
 
 
-void loop(){
-
-//  
+void loop(){ 
   for(int i = 0; i < BTN_NUM; i++){
     nowStates[i] = digitalRead(btns[i]);
     if(nowStates[i] != oldStates[i]){
