@@ -40,7 +40,6 @@ __Supply list:__
 8. __Test pushbutton functionality by lighting single LED bulb__ You'll see that our void loop() function includes some lines that would turn the single LED bulbs on/off. We found that our LED Matrix components started to burn out fairly quickly, so instead of using these when figuring out the functionality of our pushbuttons, we used the LEDs. Feel free to skip this step in the code and setup, unless you are troubleshooting.
 
 9. __Assemble the project and connect the Arduino to the computer__ Again, refer to our Fritzing diagram for wiring instructions. And again, if you are not using the single LED lights for testing, simply ommit them.
-
 ![picture of bike signal wiring](https://github.com/caitlinhaaf/arduino-bikesignal-tutorial/blob/master/Media/IMG_20151203_104801142_HDR%20(1).jpg)
 
 10. __Set up void rightBlink() and void leftBlink() functions__ We used the LED Matrix library to map out our arrow shapes on the matrices. The lc.setLED() function collects 4 parameters: matrix number, column number, row number, and true/false (on/off). We set our right arrow LEDS to blink on/off in the rightBlink() function, and the left arrow LEDS to blink on/off in the leftBlink() function. 
